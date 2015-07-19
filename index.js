@@ -17,9 +17,6 @@ app.use(function(req, res, next) {
 var mail;
 var user;
 
-app.listen(app.get('port'), function(){
-	console.log('Connection Strated');
-});
 
 
 
@@ -237,7 +234,7 @@ mongoose.connection.once('open', function() {
 
 
 
-
+app.listen(PORT);
 
 
 
